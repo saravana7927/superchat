@@ -1,0 +1,264 @@
+/*login page */
+#chat-screen {
+  margin-left: 20%;
+  margin-top: 7%;
+  height: calc(100vh - (7% + header-height + footer-height));
+  width: 60%;
+
+  display: flex;
+}
+
+#welc {
+  text-align: center;
+  font: inherit;
+  color: #333; 
+}
+
+#div1,
+#div2 {
+  flex: 1;
+  background-color: #f5f5f5; 
+  border-radius: 5px;
+}
+
+#div1 img,
+#div2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#div1img {
+  width: 50%;
+  height: 100%;
+}
+
+
+#inner-image {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inner-image img {
+  width: 100%;
+  height: 100%;
+}
+
+#sign-in-btn {
+  margin-left: 25%;
+  background-color: #007bff; 
+  color: #fff;
+  width: 50%;
+  height: 10%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* end of login page */
+
+/* user info side */
+
+#div-chat-header {
+  background-color: #333; 
+  color: #fff; 
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#div-chat-header h2 {
+  font-size: 24px;
+  margin: 0; 
+}
+
+#sign-out-btn {
+  background-color: #444; 
+  color: #fff;
+  border: none;
+  padding: 8px 16px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  font-size: 16px; 
+  transition: background-color 0.2s ease; 
+}
+
+#sign-out-btn:hover {
+  background-color: #555; 
+}
+
+#send-btn {
+  background-color: #28a745; 
+  color: #fff; 
+  width: 100px; 
+  height: 40px; 
+  font-size: 16px; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease; 
+}
+
+#send-btn:hover {
+  background-color: #218838; 
+}
+
+#send-btn:disabled {
+  background-color: #d4b4b4; 
+  cursor: not-allowed;
+}
+
+/* chat side */
+
+
+#div-chat-body {
+  height: 600px;
+  display: flex;
+  background-color: #f0f8ff; 
+}
+
+#div1-chat {
+  flex: 1 0 20%;
+  background-color: #007bff; 
+  width: 20%;
+  position: relative;
+  padding: 10px; 
+}
+
+form {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#message-box {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#name-prof-disp {
+  background-color: #007bff; 
+  height: 50%;
+  width: fit-content;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+}
+
+#name-prof-disp img {
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+#name-prof-disp p {
+  margin: 0;
+  padding: 10px;
+  color: #fff; 
+}
+
+#div2-chat {
+  flex: 1 0 80%;
+  background-color: #f5f5f5; 
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 40%;
+  margin: 4px 8px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #e8e8e8; 
+}
+
+.receiver {
+  align-self: flex-start;
+  background-color: #d4edda; 
+}
+
+
+#tandd {
+  align-self: flex-end;
+  margin: 0;
+}
+
+#profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  float: left;
+}
+
+#name-disp {
+  float: left;
+  height: 50%;
+}
+
+#profdiv {
+  width: fit-content;
+  height: 50%;
+}
+
+p {
+  margin: 0;
+}
+
+#username {
+  font-size: 80%;
+}
+
+#sign-inst{
+  font-size: medium;
+  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+#cur-user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cur-user-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#cur-user-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+#cur-user-email {
+  font-size: 14px;
+  color: #666;
+}

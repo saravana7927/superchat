@@ -12,7 +12,7 @@ let udispname, uprofilepic;
 
 
 firebase.initializeApp({
-  apiKey: "AIzaSyCdaTOUNnmPaLKS17dme3x9d1xGj0wo5Lw",
+  apiKey: "your API key ",
   authDomain: "superchat-apk-7927-9efa6.firebaseapp.com",
   databaseURL: "https://superchat-apk-7927-9efa6-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "superchat-apk-7927-9efa6",
